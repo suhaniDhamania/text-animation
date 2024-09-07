@@ -1,0 +1,52 @@
+body{
+    display:grid;
+    place-items:center;
+    background-color: darkslateblue;
+}
+h1{
+    color:white;
+    font-size:100px;
+   position: relative;
+}
+
+h1::before{
+    content:"suhani...";
+    text-transform: uppercase;
+    color:yellow;
+    position:absolute;
+    border-right:2px solid black;
+    overflow:hidden;
+animation:left-right 2s linear infinite ;
+}
+
+@keyframes left-right{
+    0%{
+        width:0;
+    }
+    50%{
+        width:100%;
+    }
+    100%{
+        width:0;
+    }
+}
+
+h2{
+    text-align: center;
+    height:40px;
+  border-right:2px solid yellow;
+  overflow:hidden;
+  animation: move 4s linear infinite;
+}
+
+@keyframes move{
+    0%{
+        width:0;
+    }
+    50%{
+        width:100%;
+    }
+    100%{
+        width:0;
+    }
+}
